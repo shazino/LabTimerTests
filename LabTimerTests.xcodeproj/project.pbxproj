@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		143446651925031900F43092 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147B9DD619250038000BDAE4 /* XCTest.framework */; };
+		1434466B1925031900F43092 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143446691925031900F43092 /* InfoPlist.strings */; };
+		143446741925035800F43092 /* SZNAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DF419250157000BDAE4 /* SZNAppDelegateSpec.m */; };
+		147B9DB819250038000BDAE4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147B9DB719250038000BDAE4 /* Cocoa.framework */; };
+		147B9DC219250038000BDAE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 147B9DC019250038000BDAE4 /* InfoPlist.strings */; };
+		147B9DC419250038000BDAE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DC319250038000BDAE4 /* main.m */; };
+		147B9DC819250038000BDAE4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 147B9DC619250038000BDAE4 /* Credits.rtf */; };
+		147B9DCE19250038000BDAE4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147B9DCC19250038000BDAE4 /* MainMenu.xib */; };
+		147B9DD019250038000BDAE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147B9DCF19250038000BDAE4 /* Images.xcassets */; };
+		147B9DF119250070000BDAE4 /* SZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DEC19250070000BDAE4 /* SZNAppDelegate.m */; };
+		147B9DF219250070000BDAE4 /* SZNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DEE19250070000BDAE4 /* SZNTimer.m */; };
+		147B9DF319250070000BDAE4 /* SZNTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DF019250070000BDAE4 /* SZNTimerViewController.m */; };
+		82249E7A810D4F39ABFDD95E /* libPods-LabTimerSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A850F2EA6B44CF8B59FFED1 /* libPods-LabTimerSpecs.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1434466F1925031900F43092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147B9DAC19250038000BDAE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147B9DB319250038000BDAE4;
+			remoteInfo = LabTimerTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		143446641925031900F43092 /* LabTimerSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabTimerSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		143446681925031900F43092 /* LabTimerSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabTimerSpecs-Info.plist"; sourceTree = "<group>"; };
+		1434466A1925031900F43092 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1434466E1925031900F43092 /* LabTimerSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LabTimerSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		147B9DB419250038000BDAE4 /* LabTimerTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabTimerTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		147B9DB719250038000BDAE4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		147B9DBA19250038000BDAE4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		147B9DBB19250038000BDAE4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		147B9DBC19250038000BDAE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		147B9DBF19250038000BDAE4 /* LabTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabTimerTests-Info.plist"; sourceTree = "<group>"; };
+		147B9DC119250038000BDAE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		147B9DC319250038000BDAE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		147B9DC519250038000BDAE4 /* LabTimerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LabTimerTests-Prefix.pch"; sourceTree = "<group>"; };
+		147B9DC719250038000BDAE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		147B9DCD19250038000BDAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		147B9DCF19250038000BDAE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		147B9DD619250038000BDAE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		147B9DDD19250038000BDAE4 /* LabTimerTestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabTimerTestsTests-Info.plist"; sourceTree = "<group>"; };
+		147B9DDF19250038000BDAE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		147B9DEB19250070000BDAE4 /* SZNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNAppDelegate.h; path = Classes/SZNAppDelegate.h; sourceTree = "<group>"; };
+		147B9DEC19250070000BDAE4 /* SZNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAppDelegate.m; path = Classes/SZNAppDelegate.m; sourceTree = "<group>"; };
+		147B9DED19250070000BDAE4 /* SZNTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNTimer.h; path = Classes/SZNTimer.h; sourceTree = "<group>"; };
+		147B9DEE19250070000BDAE4 /* SZNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimer.m; path = Classes/SZNTimer.m; sourceTree = "<group>"; };
+		147B9DEF19250070000BDAE4 /* SZNTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNTimerViewController.h; path = Classes/SZNTimerViewController.h; sourceTree = "<group>"; };
+		147B9DF019250070000BDAE4 /* SZNTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewController.m; path = Classes/SZNTimerViewController.m; sourceTree = "<group>"; };
+		147B9DF419250157000BDAE4 /* SZNAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAppDelegateSpec.m; path = Specs/SZNAppDelegateSpec.m; sourceTree = "<group>"; };
+		3A850F2EA6B44CF8B59FFED1 /* libPods-LabTimerSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LabTimerSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE6CB3E945745ACB0212BC7 /* libPods-LabTimerTestsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LabTimerTestsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FDEC76D63B04211AB4DAAE5 /* Pods-LabTimerSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabTimerSpecs.xcconfig"; path = "Pods/Pods-LabTimerSpecs.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143446611925031900F43092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143446651925031900F43092 /* XCTest.framework in Frameworks */,
+				82249E7A810D4F39ABFDD95E /* libPods-LabTimerSpecs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147B9DB119250038000BDAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147B9DB819250038000BDAE4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143446661925031900F43092 /* LabTimerSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				143446671925031900F43092 /* Supporting Files */,
+			);
+			path = LabTimerSpecs;
+			sourceTree = "<group>";
+		};
+		143446671925031900F43092 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				143446681925031900F43092 /* LabTimerSpecs-Info.plist */,
+				143446691925031900F43092 /* InfoPlist.strings */,
+				1434466E1925031900F43092 /* LabTimerSpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		147B9DAB19250038000BDAE4 = {
+			isa = PBXGroup;
+			children = (
+				147B9DBD19250038000BDAE4 /* LabTimerTests */,
+				147B9DDB19250038000BDAE4 /* LabTimerTestsTests */,
+				143446661925031900F43092 /* LabTimerSpecs */,
+				147B9DB619250038000BDAE4 /* Frameworks */,
+				147B9DB519250038000BDAE4 /* Products */,
+				5FDEC76D63B04211AB4DAAE5 /* Pods-LabTimerSpecs.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		147B9DB519250038000BDAE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147B9DB419250038000BDAE4 /* LabTimerTests.app */,
+				143446641925031900F43092 /* LabTimerSpecs.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		147B9DB619250038000BDAE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				147B9DB719250038000BDAE4 /* Cocoa.framework */,
+				147B9DD619250038000BDAE4 /* XCTest.framework */,
+				147B9DB919250038000BDAE4 /* Other Frameworks */,
+				3AE6CB3E945745ACB0212BC7 /* libPods-LabTimerTestsTests.a */,
+				3A850F2EA6B44CF8B59FFED1 /* libPods-LabTimerSpecs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		147B9DB919250038000BDAE4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				147B9DBA19250038000BDAE4 /* AppKit.framework */,
+				147B9DBB19250038000BDAE4 /* CoreData.framework */,
+				147B9DBC19250038000BDAE4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		147B9DBD19250038000BDAE4 /* LabTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				147B9DCC19250038000BDAE4 /* MainMenu.xib */,
+				147B9DEB19250070000BDAE4 /* SZNAppDelegate.h */,
+				147B9DEC19250070000BDAE4 /* SZNAppDelegate.m */,
+				147B9DED19250070000BDAE4 /* SZNTimer.h */,
+				147B9DEE19250070000BDAE4 /* SZNTimer.m */,
+				147B9DEF19250070000BDAE4 /* SZNTimerViewController.h */,
+				147B9DF019250070000BDAE4 /* SZNTimerViewController.m */,
+				147B9DCF19250038000BDAE4 /* Images.xcassets */,
+				147B9DBE19250038000BDAE4 /* Supporting Files */,
+			);
+			path = LabTimerTests;
+			sourceTree = "<group>";
+		};
+		147B9DBE19250038000BDAE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				147B9DBF19250038000BDAE4 /* LabTimerTests-Info.plist */,
+				147B9DC019250038000BDAE4 /* InfoPlist.strings */,
+				147B9DC319250038000BDAE4 /* main.m */,
+				147B9DC519250038000BDAE4 /* LabTimerTests-Prefix.pch */,
+				147B9DC619250038000BDAE4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		147B9DDB19250038000BDAE4 /* LabTimerTestsTests */ = {
+			isa = PBXGroup;
+			children = (
+				147B9DDC19250038000BDAE4 /* Supporting Files */,
+				147B9DF419250157000BDAE4 /* SZNAppDelegateSpec.m */,
+			);
+			path = LabTimerTestsTests;
+			sourceTree = "<group>";
+		};
+		147B9DDC19250038000BDAE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				147B9DDD19250038000BDAE4 /* LabTimerTestsTests-Info.plist */,
+				147B9DDE19250038000BDAE4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		143446631925031900F43092 /* LabTimerSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143446711925031900F43092 /* Build configuration list for PBXNativeTarget "LabTimerSpecs" */;
+			buildPhases = (
+				6582036297E641929D777A9A /* Check Pods Manifest.lock */,
+				143446601925031900F43092 /* Sources */,
+				143446611925031900F43092 /* Frameworks */,
+				143446621925031900F43092 /* Resources */,
+				804A1D64324F4D6C854D9FEC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				143446701925031900F43092 /* PBXTargetDependency */,
+			);
+			name = LabTimerSpecs;
+			productName = LabTimerSpecs;
+			productReference = 143446641925031900F43092 /* LabTimerSpecs.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		147B9DB319250038000BDAE4 /* LabTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147B9DE519250038000BDAE4 /* Build configuration list for PBXNativeTarget "LabTimerTests" */;
+			buildPhases = (
+				147B9DB019250038000BDAE4 /* Sources */,
+				147B9DB119250038000BDAE4 /* Frameworks */,
+				147B9DB219250038000BDAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LabTimerTests;
+			productName = LabTimerTests;
+			productReference = 147B9DB419250038000BDAE4 /* LabTimerTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147B9DAC19250038000BDAE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SZN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = shazino;
+				TargetAttributes = {
+					143446631925031900F43092 = {
+						TestTargetID = 147B9DB319250038000BDAE4;
+					};
+				};
+			};
+			buildConfigurationList = 147B9DAF19250038000BDAE4 /* Build configuration list for PBXProject "LabTimerTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147B9DAB19250038000BDAE4;
+			productRefGroup = 147B9DB519250038000BDAE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147B9DB319250038000BDAE4 /* LabTimerTests */,
+				143446631925031900F43092 /* LabTimerSpecs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		143446621925031900F43092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1434466B1925031900F43092 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147B9DB219250038000BDAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147B9DC219250038000BDAE4 /* InfoPlist.strings in Resources */,
+				147B9DD019250038000BDAE4 /* Images.xcassets in Resources */,
+				147B9DC819250038000BDAE4 /* Credits.rtf in Resources */,
+				147B9DCE19250038000BDAE4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6582036297E641929D777A9A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		804A1D64324F4D6C854D9FEC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-LabTimerSpecs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		143446601925031900F43092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143446741925035800F43092 /* SZNAppDelegateSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147B9DB019250038000BDAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147B9DF119250070000BDAE4 /* SZNAppDelegate.m in Sources */,
+				147B9DF219250070000BDAE4 /* SZNTimer.m in Sources */,
+				147B9DF319250070000BDAE4 /* SZNTimerViewController.m in Sources */,
+				147B9DC419250038000BDAE4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		143446701925031900F43092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147B9DB319250038000BDAE4 /* LabTimerTests */;
+			targetProxy = 1434466F1925031900F43092 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		143446691925031900F43092 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1434466A1925031900F43092 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		147B9DC019250038000BDAE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147B9DC119250038000BDAE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		147B9DC619250038000BDAE4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147B9DC719250038000BDAE4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		147B9DCC19250038000BDAE4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147B9DCD19250038000BDAE4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		147B9DDE19250038000BDAE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147B9DDF19250038000BDAE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		143446721925031900F43092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDEC76D63B04211AB4DAAE5 /* Pods-LabTimerSpecs.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LabTimerTests.app/Contents/MacOS/LabTimerTests";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LabTimerSpecs/LabTimerSpecs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LabTimerSpecs/LabTimerSpecs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		143446731925031900F43092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDEC76D63B04211AB4DAAE5 /* Pods-LabTimerSpecs.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LabTimerTests.app/Contents/MacOS/LabTimerTests";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LabTimerSpecs/LabTimerSpecs-Prefix.pch";
+				INFOPLIST_FILE = "LabTimerSpecs/LabTimerSpecs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		147B9DE319250038000BDAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		147B9DE419250038000BDAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		147B9DE619250038000BDAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LabTimerTests/LabTimerTests-Prefix.pch";
+				INFOPLIST_FILE = "LabTimerTests/LabTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		147B9DE719250038000BDAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LabTimerTests/LabTimerTests-Prefix.pch";
+				INFOPLIST_FILE = "LabTimerTests/LabTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		143446711925031900F43092 /* Build configuration list for PBXNativeTarget "LabTimerSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143446721925031900F43092 /* Debug */,
+				143446731925031900F43092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147B9DAF19250038000BDAE4 /* Build configuration list for PBXProject "LabTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147B9DE319250038000BDAE4 /* Debug */,
+				147B9DE419250038000BDAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147B9DE519250038000BDAE4 /* Build configuration list for PBXNativeTarget "LabTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147B9DE619250038000BDAE4 /* Debug */,
+				147B9DE719250038000BDAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 147B9DAC19250038000BDAE4 /* Project object */;
+}

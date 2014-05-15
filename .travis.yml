@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: Lab Timer.xcodeproj
+xcode_scheme: Lab Timer

@@ -1,3 +1,4 @@
 language: objective-c
-xcode_workspace: LabTimerTests.xcworkspace
-xcode_scheme: LabTimerTests
+before_install:
+  - gem install xcpretty
+script: make ci | xcpretty -c

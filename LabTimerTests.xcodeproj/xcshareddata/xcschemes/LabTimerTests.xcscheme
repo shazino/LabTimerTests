@@ -14,7 +14,7 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A171E4B28ECD4EF48F80C068"
+               BlueprintIdentifier = "146654084C8541C98CE37948"
                BuildableName = "libPods-LabTimerSpecs.a"
                BlueprintName = "Pods-LabTimerSpecs"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B879B6302562455DAD7FD921"
+               BlueprintIdentifier = "449CD788A1924D0DB0EB4048"
                BuildableName = "libPods-LabTimerSpecs-Kiwi.a"
                BlueprintName = "Pods-LabTimerSpecs-Kiwi"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">

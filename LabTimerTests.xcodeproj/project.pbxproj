@@ -10,6 +10,7 @@
 		143446651925031900F43092 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147B9DD619250038000BDAE4 /* XCTest.framework */; };
 		1434466B1925031900F43092 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143446691925031900F43092 /* InfoPlist.strings */; };
 		143446741925035800F43092 /* SZNAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DF419250157000BDAE4 /* SZNAppDelegateSpec.m */; };
+		1434467619251C5200F43092 /* SZNTimerViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1434467519251C5200F43092 /* SZNTimerViewControllerSpec.m */; };
 		147B9DB819250038000BDAE4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147B9DB719250038000BDAE4 /* Cocoa.framework */; };
 		147B9DC219250038000BDAE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 147B9DC019250038000BDAE4 /* InfoPlist.strings */; };
 		147B9DC419250038000BDAE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DC319250038000BDAE4 /* main.m */; };
@@ -37,6 +38,7 @@
 		143446681925031900F43092 /* LabTimerSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabTimerSpecs-Info.plist"; sourceTree = "<group>"; };
 		1434466A1925031900F43092 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1434466E1925031900F43092 /* LabTimerSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LabTimerSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		1434467519251C5200F43092 /* SZNTimerViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewControllerSpec.m; path = Specs/SZNTimerViewControllerSpec.m; sourceTree = "<group>"; };
 		147B9DB419250038000BDAE4 /* LabTimerTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabTimerTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147B9DB719250038000BDAE4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		147B9DBA19250038000BDAE4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -179,6 +181,7 @@
 			children = (
 				147B9DDC19250038000BDAE4 /* Supporting Files */,
 				147B9DF419250157000BDAE4 /* SZNAppDelegateSpec.m */,
+				1434467519251C5200F43092 /* SZNTimerViewControllerSpec.m */,
 			);
 			path = LabTimerTestsTests;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				143446741925035800F43092 /* SZNAppDelegateSpec.m in Sources */,
+				1434467619251C5200F43092 /* SZNTimerViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

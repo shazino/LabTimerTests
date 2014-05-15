@@ -16,6 +16,12 @@
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
+        <customObject id="Vn5-VB-2fq" customClass="SZNTimerViewController">
+            <connections>
+                <outlet property="timeTextField" destination="WsG-u4-I2Q" id="Ie2-6T-Y8X"/>
+                <outlet property="titleTextField" destination="CmG-xy-tsd" id="j7F-9s-VVW"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -692,6 +698,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="startTimer:" target="Vn5-VB-2fq" id="c4j-pF-pxE"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Gtc-HE-71I">
                         <rect key="frame" x="46" y="90" width="86" height="32"/>

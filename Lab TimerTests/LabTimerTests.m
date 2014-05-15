@@ -1,18 +1,18 @@
 //
-//  Lab_TimerTests.m
+//  LabTimerTests.m
 //  Lab TimerTests
 //
 //  Created by Vincent Tourraine on 5/15/14.
 //  Copyright (c) 2014 shazino. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
 
-@interface Lab_TimerTests : XCTestCase
+@interface LabTimerTests : XCTestCase
 
 @end
 
-@implementation Lab_TimerTests
+@implementation LabTimerTests
 
 - (void)setUp
 {

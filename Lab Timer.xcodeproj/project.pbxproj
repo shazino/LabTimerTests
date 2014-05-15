@@ -11,13 +11,16 @@
 		14B4D8881924E31E00CBEB62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14B4D8861924E31E00CBEB62 /* InfoPlist.strings */; };
 		14B4D88A1924E31E00CBEB62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D8891924E31E00CBEB62 /* main.m */; };
 		14B4D88E1924E31E00CBEB62 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 14B4D88C1924E31E00CBEB62 /* Credits.rtf */; };
-		14B4D8911924E31E00CBEB62 /* SZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D8901924E31E00CBEB62 /* SZNAppDelegate.m */; };
 		14B4D8941924E31E00CBEB62 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B4D8921924E31E00CBEB62 /* MainMenu.xib */; };
 		14B4D8961924E31E00CBEB62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B4D8951924E31E00CBEB62 /* Images.xcassets */; };
 		14B4D89D1924E31E00CBEB62 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4D89C1924E31E00CBEB62 /* XCTest.framework */; };
 		14B4D89E1924E31E00CBEB62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4D87D1924E31E00CBEB62 /* Cocoa.framework */; };
 		14B4D8A61924E31E00CBEB62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14B4D8A41924E31E00CBEB62 /* InfoPlist.strings */; };
-		14B4D8A81924E31E00CBEB62 /* Lab_TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D8A71924E31E00CBEB62 /* Lab_TimerTests.m */; };
+		14B4D8A81924E31E00CBEB62 /* LabTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D8A71924E31E00CBEB62 /* LabTimerTests.m */; };
+		14B4D8B31924EB9700CBEB62 /* SZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D8B21924EB9700CBEB62 /* SZNAppDelegate.m */; };
+		14B4D8B61924EBA100CBEB62 /* SZNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D8B51924EBA100CBEB62 /* SZNTimer.m */; };
+		14B4D8B91924ED0700CBEB62 /* SZNTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D8B81924ED0700CBEB62 /* SZNTimerViewController.m */; };
+		14B4D8BB1924EF6300CBEB62 /* SZNTimerViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D8BA1924EF6300CBEB62 /* SZNTimerViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,15 +44,20 @@
 		14B4D8891924E31E00CBEB62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14B4D88B1924E31E00CBEB62 /* Lab Timer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lab Timer-Prefix.pch"; sourceTree = "<group>"; };
 		14B4D88D1924E31E00CBEB62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		14B4D88F1924E31E00CBEB62 /* SZNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNAppDelegate.h; sourceTree = "<group>"; };
-		14B4D8901924E31E00CBEB62 /* SZNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZNAppDelegate.m; sourceTree = "<group>"; };
 		14B4D8931924E31E00CBEB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		14B4D8951924E31E00CBEB62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14B4D89B1924E31E00CBEB62 /* Lab TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B4D89C1924E31E00CBEB62 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		14B4D8A31924E31E00CBEB62 /* Lab TimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lab TimerTests-Info.plist"; sourceTree = "<group>"; };
 		14B4D8A51924E31E00CBEB62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		14B4D8A71924E31E00CBEB62 /* Lab_TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab_TimerTests.m; sourceTree = "<group>"; };
+		14B4D8A71924E31E00CBEB62 /* LabTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabTimerTests.m; sourceTree = "<group>"; };
+		14B4D8B11924EB9700CBEB62 /* SZNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNAppDelegate.h; path = Classes/SZNAppDelegate.h; sourceTree = "<group>"; };
+		14B4D8B21924EB9700CBEB62 /* SZNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAppDelegate.m; path = Classes/SZNAppDelegate.m; sourceTree = "<group>"; };
+		14B4D8B41924EBA100CBEB62 /* SZNTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNTimer.h; path = Classes/SZNTimer.h; sourceTree = "<group>"; };
+		14B4D8B51924EBA100CBEB62 /* SZNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimer.m; path = Classes/SZNTimer.m; sourceTree = "<group>"; };
+		14B4D8B71924ED0700CBEB62 /* SZNTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNTimerViewController.h; path = Classes/SZNTimerViewController.h; sourceTree = "<group>"; };
+		14B4D8B81924ED0700CBEB62 /* SZNTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewController.m; path = Classes/SZNTimerViewController.m; sourceTree = "<group>"; };
+		14B4D8BA1924EF6300CBEB62 /* SZNTimerViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewControllerTests.m; path = Classes/SZNTimerViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +123,13 @@
 		14B4D8831924E31E00CBEB62 /* Lab Timer */ = {
 			isa = PBXGroup;
 			children = (
-				14B4D88F1924E31E00CBEB62 /* SZNAppDelegate.h */,
-				14B4D8901924E31E00CBEB62 /* SZNAppDelegate.m */,
+				14B4D8B11924EB9700CBEB62 /* SZNAppDelegate.h */,
+				14B4D8B21924EB9700CBEB62 /* SZNAppDelegate.m */,
 				14B4D8921924E31E00CBEB62 /* MainMenu.xib */,
+				14B4D8B71924ED0700CBEB62 /* SZNTimerViewController.h */,
+				14B4D8B81924ED0700CBEB62 /* SZNTimerViewController.m */,
+				14B4D8B41924EBA100CBEB62 /* SZNTimer.h */,
+				14B4D8B51924EBA100CBEB62 /* SZNTimer.m */,
 				14B4D8951924E31E00CBEB62 /* Images.xcassets */,
 				14B4D8841924E31E00CBEB62 /* Supporting Files */,
 			);
@@ -139,7 +151,8 @@
 		14B4D8A11924E31E00CBEB62 /* Lab TimerTests */ = {
 			isa = PBXGroup;
 			children = (
-				14B4D8A71924E31E00CBEB62 /* Lab_TimerTests.m */,
+				14B4D8A71924E31E00CBEB62 /* LabTimerTests.m */,
+				14B4D8BA1924EF6300CBEB62 /* SZNTimerViewControllerTests.m */,
 				14B4D8A21924E31E00CBEB62 /* Supporting Files */,
 			);
 			path = "Lab TimerTests";
@@ -253,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B4D8911924E31E00CBEB62 /* SZNAppDelegate.m in Sources */,
+				14B4D8B31924EB9700CBEB62 /* SZNAppDelegate.m in Sources */,
+				14B4D8B61924EBA100CBEB62 /* SZNTimer.m in Sources */,
+				14B4D8B91924ED0700CBEB62 /* SZNTimerViewController.m in Sources */,
 				14B4D88A1924E31E00CBEB62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B4D8A81924E31E00CBEB62 /* Lab_TimerTests.m in Sources */,
+				14B4D8BB1924EF6300CBEB62 /* SZNTimerViewControllerTests.m in Sources */,
+				14B4D8A81924E31E00CBEB62 /* LabTimerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

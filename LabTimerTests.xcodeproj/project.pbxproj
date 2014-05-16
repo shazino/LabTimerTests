@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		143446651925031900F43092 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147B9DD619250038000BDAE4 /* XCTest.framework */; };
 		1434466B1925031900F43092 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143446691925031900F43092 /* InfoPlist.strings */; };
-		143446741925035800F43092 /* SZNAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DF419250157000BDAE4 /* SZNAppDelegateSpec.m */; };
-		1434467619251C5200F43092 /* SZNTimerViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1434467519251C5200F43092 /* SZNTimerViewControllerSpec.m */; };
 		147B9DB819250038000BDAE4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147B9DB719250038000BDAE4 /* Cocoa.framework */; };
 		147B9DC219250038000BDAE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 147B9DC019250038000BDAE4 /* InfoPlist.strings */; };
 		147B9DC419250038000BDAE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DC319250038000BDAE4 /* main.m */; };
@@ -20,6 +18,10 @@
 		147B9DF119250070000BDAE4 /* SZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DEC19250070000BDAE4 /* SZNAppDelegate.m */; };
 		147B9DF219250070000BDAE4 /* SZNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DEE19250070000BDAE4 /* SZNTimer.m */; };
 		147B9DF319250070000BDAE4 /* SZNTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DF019250070000BDAE4 /* SZNTimerViewController.m */; };
+		14D9053B1926156200D77870 /* SZNTimerSpec.m in Resources */ = {isa = PBXBuildFile; fileRef = 14D9053A1926156200D77870 /* SZNTimerSpec.m */; };
+		14D9053D192615E100D77870 /* SZNAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9053C192615E100D77870 /* SZNAppDelegateSpec.m */; };
+		14D9053F192615E900D77870 /* SZNTimerViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9053E192615E900D77870 /* SZNTimerViewControllerSpec.m */; };
+		14D905401926173300D77870 /* SZNTimerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9053A1926156200D77870 /* SZNTimerSpec.m */; };
 		82249E7A810D4F39ABFDD95E /* libPods-LabTimerSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A850F2EA6B44CF8B59FFED1 /* libPods-LabTimerSpecs.a */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,6 @@
 		143446681925031900F43092 /* LabTimerSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabTimerSpecs-Info.plist"; sourceTree = "<group>"; };
 		1434466A1925031900F43092 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1434466E1925031900F43092 /* LabTimerSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LabTimerSpecs-Prefix.pch"; sourceTree = "<group>"; };
-		1434467519251C5200F43092 /* SZNTimerViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewControllerSpec.m; path = Specs/SZNTimerViewControllerSpec.m; sourceTree = "<group>"; };
 		147B9DB419250038000BDAE4 /* LabTimerTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabTimerTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147B9DB719250038000BDAE4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		147B9DBA19250038000BDAE4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -60,7 +61,9 @@
 		147B9DEE19250070000BDAE4 /* SZNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimer.m; path = Classes/SZNTimer.m; sourceTree = "<group>"; };
 		147B9DEF19250070000BDAE4 /* SZNTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNTimerViewController.h; path = Classes/SZNTimerViewController.h; sourceTree = "<group>"; };
 		147B9DF019250070000BDAE4 /* SZNTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewController.m; path = Classes/SZNTimerViewController.m; sourceTree = "<group>"; };
-		147B9DF419250157000BDAE4 /* SZNAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAppDelegateSpec.m; path = Specs/SZNAppDelegateSpec.m; sourceTree = "<group>"; };
+		14D9053A1926156200D77870 /* SZNTimerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerSpec.m; path = LabTimerSpecs/Specs/SZNTimerSpec.m; sourceTree = SOURCE_ROOT; };
+		14D9053C192615E100D77870 /* SZNAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAppDelegateSpec.m; path = LabTimerSpecs/Specs/SZNAppDelegateSpec.m; sourceTree = SOURCE_ROOT; };
+		14D9053E192615E900D77870 /* SZNTimerViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewControllerSpec.m; path = LabTimerSpecs/Specs/SZNTimerViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
 		3A850F2EA6B44CF8B59FFED1 /* libPods-LabTimerSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LabTimerSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE6CB3E945745ACB0212BC7 /* libPods-LabTimerTestsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LabTimerTestsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FDEC76D63B04211AB4DAAE5 /* Pods-LabTimerSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabTimerSpecs.xcconfig"; path = "Pods/Pods-LabTimerSpecs.xcconfig"; sourceTree = "<group>"; };
@@ -152,10 +155,13 @@
 			isa = PBXGroup;
 			children = (
 				147B9DCC19250038000BDAE4 /* MainMenu.xib */,
+				14D9053C192615E100D77870 /* SZNAppDelegateSpec.m */,
 				147B9DEB19250070000BDAE4 /* SZNAppDelegate.h */,
 				147B9DEC19250070000BDAE4 /* SZNAppDelegate.m */,
+				14D9053A1926156200D77870 /* SZNTimerSpec.m */,
 				147B9DED19250070000BDAE4 /* SZNTimer.h */,
 				147B9DEE19250070000BDAE4 /* SZNTimer.m */,
+				14D9053E192615E900D77870 /* SZNTimerViewControllerSpec.m */,
 				147B9DEF19250070000BDAE4 /* SZNTimerViewController.h */,
 				147B9DF019250070000BDAE4 /* SZNTimerViewController.m */,
 				147B9DCF19250038000BDAE4 /* Images.xcassets */,
@@ -180,8 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				147B9DDC19250038000BDAE4 /* Supporting Files */,
-				147B9DF419250157000BDAE4 /* SZNAppDelegateSpec.m */,
-				1434467519251C5200F43092 /* SZNTimerViewControllerSpec.m */,
 			);
 			path = LabTimerTestsTests;
 			sourceTree = "<group>";
@@ -274,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D9053B1926156200D77870 /* SZNTimerSpec.m in Resources */,
 				1434466B1925031900F43092 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,8 +334,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143446741925035800F43092 /* SZNAppDelegateSpec.m in Sources */,
-				1434467619251C5200F43092 /* SZNTimerViewControllerSpec.m in Sources */,
+				14D9053D192615E100D77870 /* SZNAppDelegateSpec.m in Sources */,
+				14D9053F192615E900D77870 /* SZNTimerViewControllerSpec.m in Sources */,
+				14D905401926173300D77870 /* SZNTimerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

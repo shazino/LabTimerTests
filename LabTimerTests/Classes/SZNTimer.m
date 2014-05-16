@@ -10,4 +10,13 @@
 
 @implementation SZNTimer
 
++ (instancetype)timerWithTitle:(NSString *)title
+                    identifier:(NSString *)identifier
+           defaultTimeInterval:(NSTimeInterval)defaultTimeInterval
+{
+    SZNTimer *timer = [self.class new];
+    timer.title = title;
+    return timer;
+}
+
 @end

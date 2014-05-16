@@ -15,4 +15,8 @@
 @property (nonatomic, assign) NSTimeInterval  defaultTimeInterval;
 @property (nonatomic, assign) NSTimeInterval  currentTimeInterval;
 
++ (instancetype)timerWithTitle:(NSString *)title
+                    identifier:(NSString *)identifier
+           defaultTimeInterval:(NSTimeInterval)defaultTimeInterval;
+
 @end

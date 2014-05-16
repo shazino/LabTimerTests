@@ -11,14 +11,14 @@
 
 SPEC_BEGIN(SZNTimerViewControllerSpec)
 
-describe(@"SZNTimerViewControllerSpec", ^{
+describe(@"Timer view controller", ^{
     __block SZNTimerViewController *viewController;
 
     beforeEach(^{
         viewController = [[SZNTimerViewController alloc] init];
     });
 
-    context(@"start button pushed", ^{
+    context(@"when start button pushed", ^{
 
         it(@"should update the label", ^{
             NSTextField *textField = [[NSTextField alloc] init];

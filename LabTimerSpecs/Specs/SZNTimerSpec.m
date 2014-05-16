@@ -24,6 +24,19 @@ describe(@"Timer", ^{
             [[theValue(timer.defaultTimeInterval) should] equal:theValue(10)];
         });
     });
+
+    context(@"when rewinding", ^{
+
+        it(@"should reset its current time interval value", ^{
+            SZNTimer *timer = [SZNTimer timerWithTitle:@"Tim"
+                                            identifier:@"tim"
+                                   defaultTimeInterval:10];
+            timer.currentTimeInterval = 5;
+            [timer rewind];
+
+            [[theValue(timer.currentTimeInterval) should] equal:theValue(10)];
+        });
+    });
 });
 
 SPEC_END

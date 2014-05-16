@@ -18,7 +18,8 @@
 @property (nonatomic, strong, readonly) SZNTimer *currentTimer;
 @property (nonatomic, strong, readonly) NSTimer  *clock;
 
-- (IBAction)startTimer:(id)sender;
+- (IBAction)startTimer :(id)sender;
+- (IBAction)rewindTimer:(id)sender;
 
 - (void)clockTick:(id)sender;
 

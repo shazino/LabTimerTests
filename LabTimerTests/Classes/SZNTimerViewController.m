@@ -39,6 +39,11 @@
                                                  repeats:YES];
 }
 
+- (IBAction)rewindTimer:(id)sender
+{
+    [self.currentTimer rewind];
+}
+
 #pragma mark - Clock
 
 - (void)clockTick:(id)sender

@@ -19,4 +19,6 @@
                     identifier:(NSString *)identifier
            defaultTimeInterval:(NSTimeInterval)defaultTimeInterval;
 
+- (void)rewind;
+
 @end

@@ -34,7 +34,17 @@ describe(@"Timer view controller", ^{
             [[theValue(timer.timeInterval) should] equal:theValue(1)];
         });
     });
-    
+
+    context(@"when rewind button pushed", ^{
+        it(@"should set the current time interval to its default value", ^{
+            id timerMock = [SZNTimer mock];
+            viewController.currentTimer = timerMock;
+
+            [[timerMock should] receive:@selector(rewind)];
+            [viewController rewindTimer:nil];
+        });
+    });
+
     context(@"when the clock ticks", ^{
         it(@"should decrement the time", ^{
             viewController.currentTimer = [SZNTimer timerWithTitle:nil

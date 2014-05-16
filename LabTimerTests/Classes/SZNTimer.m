@@ -20,4 +20,9 @@
     return timer;
 }
 
+- (void)rewind
+{
+    self.currentTimeInterval = self.defaultTimeInterval;
+}
+
 @end

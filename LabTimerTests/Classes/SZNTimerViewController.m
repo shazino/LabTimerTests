@@ -37,21 +37,6 @@
                                                 selector:@selector(clockTick:)
                                                 userInfo:nil
                                                  repeats:YES];
-
-    [self setTimerTitleWithTimeInterval:self.currentTimer.currentTimeInterval];
-}
-
-- (void)setTimerTitle:(NSString *)title
-{
-    self.timeTextField.stringValue = title;
-}
-
-- (void)setTimerTitleWithTimeInterval:(NSTimeInterval)timeInterval
-{
-    NSString *title = [NSString stringWithFormat:@"%lu:%02lu",
-                        (NSUInteger)timeInterval/60,
-                        (NSUInteger)timeInterval%60];
-    [self setTimerTitle:title];
 }
 
 #pragma mark - Clock
@@ -59,7 +44,6 @@
 - (void)clockTick:(id)sender
 {
     self.currentTimer.currentTimeInterval = self.currentTimer.currentTimeInterval - 1;
-    [self setTimerTitleWithTimeInterval:self.currentTimer.currentTimeInterval];
 }
 
 @end

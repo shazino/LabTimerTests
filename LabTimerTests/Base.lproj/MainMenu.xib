@@ -691,6 +691,14 @@
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="MHo-6m-anv" name="value" keyPath="selection.currentTimeInterval" id="JWc-xe-uys">
+                                <dictionary key="options">
+                                    <string key="NSNoSelectionPlaceholder">00:00</string>
+                                    <string key="NSValueTransformerName">SZNTimeValueTransformer</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kng-ZN-1wb">
                         <rect key="frame" x="132" y="90" width="86" height="32"/>
@@ -735,5 +743,14 @@
                 </constraints>
             </view>
         </window>
+        <objectController objectClassName="SZNTimer" id="MHo-6m-anv" userLabel="Timer Object Controller">
+            <declaredKeys>
+                <string>currentTimeInterval</string>
+            </declaredKeys>
+            <connections>
+                <binding destination="Vn5-VB-2fq" name="contentObject" keyPath="self.currentTimer" id="lcc-UJ-8hN"/>
+            </connections>
+        </objectController>
+        <userDefaultsController representsSharedInstance="YES" id="v1u-s3-l2W"/>
     </objects>
 </document>

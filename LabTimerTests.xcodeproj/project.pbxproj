@@ -18,6 +18,8 @@
 		147B9DF119250070000BDAE4 /* SZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DEC19250070000BDAE4 /* SZNAppDelegate.m */; };
 		147B9DF219250070000BDAE4 /* SZNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DEE19250070000BDAE4 /* SZNTimer.m */; };
 		147B9DF319250070000BDAE4 /* SZNTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B9DF019250070000BDAE4 /* SZNTimerViewController.m */; };
+		14C83E5B192656A5009D41F8 /* SZNTimeValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83E5A192656A5009D41F8 /* SZNTimeValueTransformer.m */; };
+		14C83E601926576C009D41F8 /* SZNTimeValueTransformerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83E5F1926576C009D41F8 /* SZNTimeValueTransformerSpec.m */; };
 		14D9053B1926156200D77870 /* SZNTimerSpec.m in Resources */ = {isa = PBXBuildFile; fileRef = 14D9053A1926156200D77870 /* SZNTimerSpec.m */; };
 		14D9053D192615E100D77870 /* SZNAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9053C192615E100D77870 /* SZNAppDelegateSpec.m */; };
 		14D9053F192615E900D77870 /* SZNTimerViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9053E192615E900D77870 /* SZNTimerViewControllerSpec.m */; };
@@ -61,6 +63,9 @@
 		147B9DEE19250070000BDAE4 /* SZNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimer.m; path = Classes/SZNTimer.m; sourceTree = "<group>"; };
 		147B9DEF19250070000BDAE4 /* SZNTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNTimerViewController.h; path = Classes/SZNTimerViewController.h; sourceTree = "<group>"; };
 		147B9DF019250070000BDAE4 /* SZNTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewController.m; path = Classes/SZNTimerViewController.m; sourceTree = "<group>"; };
+		14C83E59192656A5009D41F8 /* SZNTimeValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNTimeValueTransformer.h; path = Classes/SZNTimeValueTransformer.h; sourceTree = "<group>"; };
+		14C83E5A192656A5009D41F8 /* SZNTimeValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimeValueTransformer.m; path = Classes/SZNTimeValueTransformer.m; sourceTree = "<group>"; };
+		14C83E5F1926576C009D41F8 /* SZNTimeValueTransformerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimeValueTransformerSpec.m; path = LabTimerSpecs/Specs/SZNTimeValueTransformerSpec.m; sourceTree = SOURCE_ROOT; };
 		14D9053A1926156200D77870 /* SZNTimerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerSpec.m; path = LabTimerSpecs/Specs/SZNTimerSpec.m; sourceTree = SOURCE_ROOT; };
 		14D9053C192615E100D77870 /* SZNAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAppDelegateSpec.m; path = LabTimerSpecs/Specs/SZNAppDelegateSpec.m; sourceTree = SOURCE_ROOT; };
 		14D9053E192615E900D77870 /* SZNTimerViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNTimerViewControllerSpec.m; path = LabTimerSpecs/Specs/SZNTimerViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
@@ -155,15 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				147B9DCC19250038000BDAE4 /* MainMenu.xib */,
-				14D9053C192615E100D77870 /* SZNAppDelegateSpec.m */,
-				147B9DEB19250070000BDAE4 /* SZNAppDelegate.h */,
-				147B9DEC19250070000BDAE4 /* SZNAppDelegate.m */,
-				14D9053A1926156200D77870 /* SZNTimerSpec.m */,
-				147B9DED19250070000BDAE4 /* SZNTimer.h */,
-				147B9DEE19250070000BDAE4 /* SZNTimer.m */,
-				14D9053E192615E900D77870 /* SZNTimerViewControllerSpec.m */,
-				147B9DEF19250070000BDAE4 /* SZNTimerViewController.h */,
-				147B9DF019250070000BDAE4 /* SZNTimerViewController.m */,
+				14C83E5C1926573C009D41F8 /* App delegate */,
+				14C83E5D19265742009D41F8 /* Timer */,
+				14C83E5E19265748009D41F8 /* Timer view controller */,
+				14C83E6119265776009D41F8 /* Time value transformer */,
 				147B9DCF19250038000BDAE4 /* Images.xcassets */,
 				147B9DBE19250038000BDAE4 /* Supporting Files */,
 			);
@@ -197,6 +197,46 @@
 				147B9DDE19250038000BDAE4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14C83E5C1926573C009D41F8 /* App delegate */ = {
+			isa = PBXGroup;
+			children = (
+				14D9053C192615E100D77870 /* SZNAppDelegateSpec.m */,
+				147B9DEB19250070000BDAE4 /* SZNAppDelegate.h */,
+				147B9DEC19250070000BDAE4 /* SZNAppDelegate.m */,
+			);
+			name = "App delegate";
+			sourceTree = "<group>";
+		};
+		14C83E5D19265742009D41F8 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				14D9053A1926156200D77870 /* SZNTimerSpec.m */,
+				147B9DED19250070000BDAE4 /* SZNTimer.h */,
+				147B9DEE19250070000BDAE4 /* SZNTimer.m */,
+			);
+			name = Timer;
+			sourceTree = "<group>";
+		};
+		14C83E5E19265748009D41F8 /* Timer view controller */ = {
+			isa = PBXGroup;
+			children = (
+				14D9053E192615E900D77870 /* SZNTimerViewControllerSpec.m */,
+				147B9DEF19250070000BDAE4 /* SZNTimerViewController.h */,
+				147B9DF019250070000BDAE4 /* SZNTimerViewController.m */,
+			);
+			name = "Timer view controller";
+			sourceTree = "<group>";
+		};
+		14C83E6119265776009D41F8 /* Time value transformer */ = {
+			isa = PBXGroup;
+			children = (
+				14C83E5F1926576C009D41F8 /* SZNTimeValueTransformerSpec.m */,
+				14C83E59192656A5009D41F8 /* SZNTimeValueTransformer.h */,
+				14C83E5A192656A5009D41F8 /* SZNTimeValueTransformer.m */,
+			);
+			name = "Time value transformer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D9053D192615E100D77870 /* SZNAppDelegateSpec.m in Sources */,
+				14C83E601926576C009D41F8 /* SZNTimeValueTransformerSpec.m in Sources */,
 				14D9053F192615E900D77870 /* SZNTimerViewControllerSpec.m in Sources */,
 				14D905401926173300D77870 /* SZNTimerSpec.m in Sources */,
 			);
@@ -347,6 +388,7 @@
 				147B9DF119250070000BDAE4 /* SZNAppDelegate.m in Sources */,
 				147B9DF219250070000BDAE4 /* SZNTimer.m in Sources */,
 				147B9DF319250070000BDAE4 /* SZNTimerViewController.m in Sources */,
+				14C83E5B192656A5009D41F8 /* SZNTimeValueTransformer.m in Sources */,
 				147B9DC419250038000BDAE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

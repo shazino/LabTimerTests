@@ -26,11 +26,6 @@ describe(@"Timer view controller", ^{
 
     context(@"when start button pushed", ^{
 
-        it(@"should update the label", ^{
-            [[[viewController should] receive] setTimerTitle:@"1:40"];
-            [viewController startTimer:nil];
-        });
-
         it(@"should create the timer", ^{
             [[viewController.clock should] beNil];
             [viewController startTimer:nil];
@@ -41,14 +36,15 @@ describe(@"Timer view controller", ^{
     });
     
     context(@"when the clock ticks", ^{
-        it(@"should update the label", ^{
+        it(@"should decrement the time", ^{
             viewController.currentTimer = [SZNTimer timerWithTitle:nil
                                                         identifier:nil
                                                defaultTimeInterval:0];
             viewController.currentTimer.currentTimeInterval = 10;
 
-            [[[viewController should] receive] setTimerTitleWithTimeInterval:9];
             [viewController clockTick:nil];
+
+            [[theValue(viewController.currentTimer.currentTimeInterval) should] equal:theValue(9)];
         });
     });
 });

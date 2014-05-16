@@ -20,9 +20,6 @@
 
 - (IBAction)startTimer:(id)sender;
 
-- (void)setTimerTitle:(NSString *)title;
-- (void)setTimerTitleWithTimeInterval:(NSTimeInterval)timeInterval;
-
 - (void)clockTick:(id)sender;
 
 @end

@@ -26,9 +26,15 @@ describe(@"App delegate", ^{
             [[views should] haveCountOf:4];
         });
 
-        it(@"should have the main text field", ^{
-            NSTextField *textField = appDelegate.timerViewController.titleTextField;
+        it(@"should have the main text field binded", ^{
+            NSTextField *textField = appDelegate.timerViewController.timeTextField;
             [[textField should] beKindOfClass:NSTextField.class];
+
+            NSDictionary *info = [textField infoForBinding:NSValueBinding];
+            [[info[NSObservedKeyPathKey] should] equal:@"selection.currentTimeInterval"];
+
+            NSDictionary *options = info[NSOptionsKey];
+            [[options[NSValueTransformerNameBindingOption] should] equal:@"SZNTimeValueTransformer"];
         });
     });
 });

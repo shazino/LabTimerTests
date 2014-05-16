@@ -8,11 +8,13 @@
 
 @import Cocoa;
 
-@interface SZNTimerViewController : NSViewController
+@interface SZNTimerViewController : NSViewController <NSTextFieldDelegate>
 
 @property (nonatomic, weak) IBOutlet NSTextField *timeTextField;
 @property (nonatomic, weak) IBOutlet NSTextField *titleTextField;
 
 - (IBAction)startTimer:(id)sender;
+
+- (void)setTimerTitle:(NSString *)title;
 
 @end

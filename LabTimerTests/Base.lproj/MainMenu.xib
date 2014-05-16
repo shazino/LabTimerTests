@@ -13,6 +13,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="SZNAppDelegate">
             <connections>
+                <outlet property="timerViewController" destination="Vn5-VB-2fq" id="yKd-eA-zoi"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>

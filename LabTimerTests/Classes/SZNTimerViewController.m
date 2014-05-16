@@ -18,7 +18,12 @@
 
 - (IBAction)startTimer:(id)sender
 {
-    self.timeTextField.stringValue = @"99:99";
+    [self setTimerTitle:@"99:99"];
+}
+
+- (void)setTimerTitle:(NSString *)title
+{
+    self.timeTextField.stringValue = title;
 }
 
 @end

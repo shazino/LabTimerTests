@@ -8,11 +8,18 @@
 
 #import "SZNAppDelegate.h"
 
+@interface SZNAppDelegate ()
+
+@property (nonatomic, weak, readwrite) IBOutlet SZNTimerViewController *timerViewController;
+
+@end
+
+
 @implementation SZNAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    
 }
 
 @end

@@ -8,30 +8,28 @@
 
 #import "Kiwi.h"
 #import "SZNAppDelegate.h"
+#import "SZNTimerViewController.h"
 
 SPEC_BEGIN(SZNAppDelegateSpec)
 
-describe(@"SZNAppDelegateSpec", ^{
-    __block SZNAppDelegate *appDelegate;
+describe(@"App delegate", ^{
+    SZNAppDelegate *appDelegate = (id)[NSApplication sharedApplication].delegate;
 
-    beforeEach(^{
-        appDelegate = [[SZNAppDelegate alloc] init];
+    context(@"when it loads the main window", ^{
+        it(@"should have an app delegate", ^{
+            [[appDelegate should] beKindOfClass:SZNAppDelegate.class];
+        });
+
+        it(@"should contain the main controls", ^{
+            NSView  *contentView = appDelegate.window.contentView;
+            NSArray *views       = contentView.subviews;
+            [[views should] haveCountOf:4];
+        });
+
+        it(@"should have the main text field", ^{
+            [[appDelegate.timerViewController.titleTextField should] beKindOfClass:NSTextField.class];
+        });
     });
-
-//    context(@"application:DidFinishLaunching:", ^{
-//
-//        it(@"should call call", ^{
-//            [[appDelegate should] receive:@selector(firstCall)];
-//
-//            [appDelegate applicationDidFinishLaunching:nil];
-//        });
-//
-//        it(@"should call otherCall", ^{
-//            [[appDelegate should] receive:@selector(otherCall)];
-//
-//            [appDelegate applicationDidFinishLaunching:nil];
-//        });
-//    });
 });
 
 SPEC_END

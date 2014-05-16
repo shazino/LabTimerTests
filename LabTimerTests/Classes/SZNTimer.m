@@ -15,7 +15,8 @@
            defaultTimeInterval:(NSTimeInterval)defaultTimeInterval
 {
     SZNTimer *timer = [self.class new];
-    timer.title = title;
+    timer.title               = title;
+    timer.defaultTimeInterval = defaultTimeInterval;
     return timer;
 }
 

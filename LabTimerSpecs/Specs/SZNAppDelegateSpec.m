@@ -27,7 +27,8 @@ describe(@"App delegate", ^{
         });
 
         it(@"should have the main text field", ^{
-            [[appDelegate.timerViewController.titleTextField should] beKindOfClass:NSTextField.class];
+            NSTextField *textField = appDelegate.timerViewController.titleTextField;
+            [[textField should] beKindOfClass:NSTextField.class];
         });
     });
 });

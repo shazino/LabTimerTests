@@ -21,6 +21,7 @@ describe(@"Timer", ^{
                                    defaultTimeInterval:10];
 
             [[timer.title should] equal:@"Tim"];
+            [[theValue(timer.defaultTimeInterval) should] equal:theValue(10)];
         });
     });
 });

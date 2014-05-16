@@ -7,7 +7,13 @@
 //
 
 #import "Kiwi.h"
+
+#import "SZNTimer.h"
 #import "SZNTimerViewController.h"
+
+@interface SZNTimerViewController ()
+@property (nonatomic, strong, readwrite) SZNTimer *currentTimer;
+@end
 
 SPEC_BEGIN(SZNTimerViewControllerSpec)
 
@@ -21,11 +27,28 @@ describe(@"Timer view controller", ^{
     context(@"when start button pushed", ^{
 
         it(@"should update the label", ^{
-            NSTextField *textField = [[NSTextField alloc] init];
-            viewController.timeTextField = textField;
-
+            [[[viewController should] receive] setTimerTitle:@"1:40"];
             [viewController startTimer:nil];
-            [[viewController.timeTextField.stringValue should] equal:@"99:99"];
+        });
+
+        it(@"should create the timer", ^{
+            [[viewController.clock should] beNil];
+            [viewController startTimer:nil];
+            NSTimer *timer = viewController.clock;
+            [[timer should] beNonNil];
+            [[theValue(timer.timeInterval) should] equal:theValue(1)];
+        });
+    });
+    
+    context(@"when the clock ticks", ^{
+        it(@"should update the label", ^{
+            viewController.currentTimer = [SZNTimer timerWithTitle:nil
+                                                        identifier:nil
+                                               defaultTimeInterval:0];
+            viewController.currentTimer.currentTimeInterval = 10;
+
+            [[[viewController should] receive] setTimerTitleWithTimeInterval:9];
+            [viewController clockTick:nil];
         });
     });
 });
